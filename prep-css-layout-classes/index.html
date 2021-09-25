@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+      flex-direction: column;
+      display: flex;
+    }
+    img { width: 100%; }
+
+  </style>
+</head>
+<body>
+  <h1> Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/temple.jpg" alt="Temple of Doom">
+        <h3>Temple of Doom </h3>
+        <p>Indiana embarks on a peril-laden quest to retrieve the sacred Sankara Stone stolen from the shrine of an impoverished
+        Indian community and the village's kidnapped children. Now, as the evil Thuggee cult spreads its tentacles over the
+        region, and even in the opulent Palace of Pankot, Indy and his team must brave swarms of disgusting creepy crawlies, an
+        army of armed-to-the-teeth zealots, and unspeakable subterranean terrors.</p>
+        </div>
+    <div class="column">
+        <img src="images/raiders.jpg" alt="Raiders of the Lost Ark">
+        <h3>Raiders of the Lost Ark</h3>
+          <p>Set in the early half of the 20th century, the film is the story of an archaeologist named Indiana Jones hired by the US
+          government and pitted in a race against time to locate the mysterious and supernatural Ark of the Covenant before it
+          falls into the hands of Adolf Hitler and his regime of Nazi supporters who seek to use the Biblical artifact's power as
+          a means for world domination.</p>
+          </div>
+      <div class="column">
+        <img src="images/crusade.jpg" alt="The Last Crusade">
+        <h3>The Last Crusade</h3>
+          <p>Indiana Jones, famed adventurer and archaeologist acquires a diary that holds clues and a map with no names to find the
+          mysterious Holy Grail, which was sent from his father, Dr. Henry Jones, in Italy. Upon hearing from a private collector,
+          Walter Donovan, that the mission for the Holy Grail went astray with the disappearance of his father, Indiana Jones and
+          museum curator Marcus Brody venture to Italy in search of Indy's father.</p>
+          </div>
+
+    </div>
+  </div>
+</body>
+</html>
